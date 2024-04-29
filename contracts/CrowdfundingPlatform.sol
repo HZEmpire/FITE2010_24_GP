@@ -23,6 +23,7 @@ contract CrowdfundingPlatform {
     // _goalAmount: 目标金额
     // _duration: 活动持续时间
     // 返回值: 活动信息，包括活动ID
+    // Author: Xu Haozhou
     function createCampaign(string memory _description, uint256 _goalAmount, uint256 _duration) public {
         require(_goalAmount > 0, "Goal amount must be greater than 0");
         campaigns[campaignCount] = Campaign({
@@ -41,6 +42,7 @@ contract CrowdfundingPlatform {
     // 捐款
     // _campaignId: 活动ID
     // 捐款金额: msg.value
+    // Author: Xu Haozhou
     function fundCampaign(uint256 _campaignId) public payable {
         Campaign storage campaign = campaigns[_campaignId];
         require(block.timestamp < campaign.endTime, "Campaign has ended.");
@@ -53,6 +55,7 @@ contract CrowdfundingPlatform {
     // 领取募捐款项
     // _campaignId: 活动ID
     // 只有活动发起人，且活动已经结束可以领取
+    // Author: Xu Haozhou
     function claimFunds(uint256 _campaignId) public {
         Campaign storage campaign = campaigns[_campaignId];
         require(msg.sender == campaign.owner, "Only the owner can claim funds.");
@@ -67,6 +70,7 @@ contract CrowdfundingPlatform {
         }
     }
     // 获取活动信息
+    // Author: Xu Haozhou
     function getCampaign(uint256 _campaignId) public view returns (Campaign memory) {
         return campaigns[_campaignId];
     }

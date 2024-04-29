@@ -1,22 +1,6 @@
 {
-  "name": "fite2010_24_gp",
-  "version": "1.0.0",
-  "description": "The Group Project for the HKU FITE2010 24 Spring Course",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
-    "@types/mocha": "^10.0.6",
-    "ethers": "^5.7.2",
-    "hardhat": "^2.22.3"
-  },
-  "dependencies": {
-    "@alch/alchemy-web3": "^1.4.7",
-    "@openzeppelin/contracts": "^4.9.6",
-    "dotenv": "^16.4.5"
+    "dependencies": {
+      "web3": "^4.8.0"
+    }
   }
-}
+  
