@@ -20,6 +20,16 @@ The contract allowed the user to get the information of a campaign by specifying
 ### Claim the Fund
 The contract allowed the creator of the campaign to claim the fund if the campaign is ended. Other users could not claim the fund.
 
+### Get Donator Information
+The getDonator function enables users to fetch information about a specific donator for a campaign by providing the campaign ID and the index of the donation. It returns the donator's address and the donation amount.
+
+### Get Remaining Time
+The getRemainingTime function allows users to determine the remaining time for a campaign by supplying the campaign ID. It returns the amount of time remaining.
+
+### Request Refund
+The requestRefund function enables users to request a refund if the campaign has ended and the goal amount has not been met. This is applicable if they have made a donation to the campaign.
+
+
 ## Test Cases
 The test cases are provided in the [`test`](/test/) folder.
 - Task 1: Create a Campaign
@@ -72,3 +82,4 @@ truffle test
 
 ## Contributors
 - Xu Haozhou
+- Song Wenhao
