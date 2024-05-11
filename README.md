@@ -4,7 +4,7 @@ The Group Project for the HKU FITE2010 24 Spring Course
 This project is a group project for the HKU FITE2010 24 Spring Course. The project is to create a decentralized application with smart contract and web3.js. The selected topic is a crowdfunding platform. 
 
 The project is done by a group of 5 students. The group members are:
-Xu Haozhou, Zhu Lingxiao, Song Wenhao, Jin Qizheng, and .
+Xu Haozhou, Song Wenhao, Zhu Lingxiao, Jin Qizheng, and Hu Rui.
 
 ## Feature
 
@@ -83,3 +83,4 @@ truffle test
 ## Contributors
 - Xu Haozhou
 - Song Wenhao
+- Zhu Lingxiao
