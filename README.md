@@ -84,3 +84,5 @@ truffle test
 - Xu Haozhou
 - Song Wenhao
 - Zhu Lingxiao
+- Jin Qizheng
+- Hu Rui
